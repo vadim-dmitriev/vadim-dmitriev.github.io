@@ -1,11 +1,19 @@
-baseURL: https://example.com
-languageCode: ru-ru
+baseURL: https://vadim-dmitriev.github.io/
 title: Tech Notes
 theme: mini
+languageCode: ru-ru
 contentDir: content
 
 # Default content language, support en (English) / zh (Chinese) / nl (Dutch) / fr (French) / es (Spanish) / da (Danish), default 'en'
-defaultContentLanguage: ru
+defaultContentLanguage: en
+
+# languages:
+#   ru:
+#     languageCode: ru
+#     languageName: Russian
+#     params:
+#       reading_speed: 179
+#     weight: 2
 
 hasCJKLanguage: true
 permalinks:
@@ -13,7 +21,7 @@ permalinks:
 
 paginate: 3
 
-# googleAnalytics: your-google-analytics-id
+googleAnalytics: G-FN9GSZ50FE
 # disqusShortname: your-disqus-shortname
 
 # Hugo Configure Markup
@@ -22,19 +30,21 @@ markup:
   highlight:
     guessSyntax: true
     style: emacs
-  # tableOfContents:
-  #   endLevel: 3
-  #   ordered: false
-  #   startLevel: 2
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
   # needed to render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
   goldmark:
     renderer:
       unsafe: true
 
+
 # Social links in footer, support github,twitter,stackoverflow,facebook
 social:
-  # e.g.
   github: https://github.com/vadim-dmitriev
+  # TODO: fork theme and add this social.
+  # telegram: https://t.me/dva_notes
   # twitter: your-twitter-link
   # stackoverflow: your-stackoverflow-link
   # facebook: your-facebook-link
@@ -48,6 +58,10 @@ params:
   bio: Go Lead/Software Engineer
   # Site Description, used in HTML meat
   description: This is my personal technical blog
+  # darkMode:
+  #   enable: true
+  readingTime:
+      enable: false
 
 
   ###########################################
@@ -79,10 +93,6 @@ params:
 
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
   customCSS:
-    ## e.g.
-    # - css/custom.css # local css in `static/css/custom.css`
-    # - https://example.com/custom.css # remote css
+    - css/styles.css
   customJS:
-    ## e.g.
-    # - js/custom.js # local js in `static/js/custom.js`
-    # - https://example.com/custom.js # remote js
+    - js/script.js

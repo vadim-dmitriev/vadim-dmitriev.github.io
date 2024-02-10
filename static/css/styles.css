@@ -1,0 +1,15 @@
+/* Блок переопределения стилей темы mini */
+#single {
+    max-width: 800px;
+}
+
+/* Блок с собственными стилями */
+.center {
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  max-width: 85%;
+  height: auto;
+}

@@ -1,5 +1,7 @@
 # Content from 'https://github.com/github/gitignore/blob/main/community/Golang/Hugo.gitignore'
 
+.DC_Store
+
 # Generated files by hugo
 /public/
 /resources/_gen/

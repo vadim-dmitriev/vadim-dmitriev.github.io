@@ -58,6 +58,8 @@ params:
   bio: Go Lead/Software Engineer
   # Site Description, used in HTML meat
   description: This is my personal technical blog
+  # Google analytics
+  enableGoogleAnalytics: true
   # darkMode:
   #   enable: true
   readingTime:
